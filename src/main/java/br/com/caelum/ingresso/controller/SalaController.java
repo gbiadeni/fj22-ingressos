@@ -69,7 +69,7 @@ public class SalaController {
     }
 
 
-    @GetMapping("/admin/sala/{id}/sessoes")
+    @PostMapping("/admin/sala/{id}/sessoes")
     public ModelAndView listaSessoes(@PathVariable("id") Integer id) {
 
         Sala sala = salaDao.findOne(id);
